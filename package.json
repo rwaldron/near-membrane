@@ -21,6 +21,7 @@
     "coverage:report": "yarn istanbul --include report coverage-merged.json --dir coverage-merged html",
     "test:bundlesize": "bundlesize",
     "test": "yarn test:jest; yarn test:karma",
+    "test:embedded": "lerna run test --stream --scope @locker/near-membrane-embedded",
     "test:jest": "jest --runInBand --no-cache --config jest.config.js",
     "test:karma": "karma start karma.config.js --single-run --browsers ChromeHeadless,FirefoxHeadless",
     "version": "yarn build",
